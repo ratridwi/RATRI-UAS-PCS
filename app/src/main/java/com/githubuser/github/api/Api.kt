@@ -30,8 +30,6 @@ interface Api {
 
     @GET("users/{username}/following")
     //@Headers("Authorization: token 46e23342542600bda4019c029036f24a54ad524d")
-
-
     fun getFollowing(
         @Path("username") username : String
     ): Call<ArrayList<User>>
